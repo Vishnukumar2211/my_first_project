@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+
+        button{
+            width:200px;
+            height:60px;
+            border-radius:30px;
+        }
+        .flex-container1{
+            display:flex;
+            padding: 50px;
+            border: 2px solid black;
+           background-image: url('back2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+        }
+        .flex-container1 > .box1{
+            background-image: url('burger1.jpeg');
+            height:500px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            margin: 100px;
+            border-radius: 10px;
+        }
+        .flex-container1 > .box2{
+            width:500px;
+            height: 500px;
+            margin: 100px;
+        
+        }
+
+        .flex-container2{
+            display:flex;
+            padding: 50px;
+            border: 2px solid black;
+            background-color: aliceblue;
+        }
+        .flex-container2 > .box1{
+            background-image: url('burger2.jpeg');
+            height:500px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            margin: 100px;
+            border-radius: 10px;
+        }
+        .flex-container2 > .box2{
+            width:500px;
+            height: 500px;
+            margin: 100px;
+        }
+
+        .flex-container3{
+            display:flex;
+            padding: 50px;
+             border: 2px solid black; 
+            background-color: aliceblue;
+        }
+        .flex-container3 > .box1{
+            background-image: url('burger3.jpeg');
+            height:500px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            margin: 100px;
+            border-radius: 10px;
+        }
+        .flex-container3 > .box2{
+            width:500px;
+            height: 500px;
+            margin: 100px;
+        }
+
+
+        button:hover{
+            background-color: red;
+        }
+
+
+        .header{
+    color:black;
+    background-color:gold;
+    text-align: center;
+    padding:10px;
+    /* position: fixed;
+    width: 1500px; */
+    /* border:2px solid black; */
+}    
+.nav ul{ 
+    margin: 0;
+    /* border:1px solid black; */
+    background-color: aqua;
+    overflow: hidden;
+     list-style-type:none;
+    padding: 10px;
+    /* position: fixed;
+    width: 1500px; */
+    
+}
+
+.nav li{
+  float:left;
+  
+
+
+}
+
+.nav li a{
+    color:black;
+    text-decoration: none;
+    font-size:30px;
+    padding:20px;
+}
+select{
+    width: 100px;
+    height:30px;
+}
+    </style>
+</head>
+<body>
+     
+  <div class="header">
+    <h1>VISHNU BURGER'S</h1>
+</div>
+<div class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+
+</div>
+    <div class="flex-container1">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+            <br>
+            <br>
+            <br>
+            <h1>Chicken Burger</h1>
+            <br>
+            <h1>200/-</h1>
+            <br>
+            <br>
+            <select id="optione">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" onclick="quanchicken()" >Order Now</button>
+
+        </div>
+    </div>
+    <br>
+    <div class="flex-container2">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+            <br>
+            <br>
+            <br>
+            <h1>Veg Burger</h1>
+            <br>
+            <h1>150/-</h1>
+            <br>
+            <br>
+            <select id="optiones">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                </select>
+                <br>
+                <br>
+            <button type="button" onclick="quanveg()" >Order Now</button>
+
+        </div>
+    </div>
+    <br>
+    <div class="flex-container3">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+            <br>
+            <br>
+            <br>
+            <h1>Cheese Burger</h1>
+            <br>
+            <h1>160/-</h1>
+            <br>
+            <br>
+            <select id="optionesr"  >
+    
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                </select>
+                <br>
+                
+                <br>
+            <button type="button" onclick="quanchese()">Order Now</button>
+
+        </div>
+    </div>
+
+    <script>
+        function quanchicken(){
+            const values=document.getElementById('optione').value;
+            const quantity=values;
+            const price=200;
+            const total=values*price;
+    
+            console.log(total);
+            alert("\tOrder Sumitted Successfully"+"\nNumber fo Burgers:"+quantity+"\nTotal price:"+total);
+        
+        }
+        function quanveg(){
+            const values=document.getElementById('optiones').value;
+            const quantity=values;
+            const price=150;
+            const total=values*price;
+    
+            console.log(total);
+            
+            console.log(total);
+            alert("\tOrder Sumitted Successfully"+"\nNumber fo Burgers:"+quantity+"\nTotal price:"+total);
+        
+            
+        }
+        function quanchese(){
+            const values=document.getElementById('optionesr').value;
+            const quantity=values;
+            const price=160;
+            const total=values*price;
+    
+            console.log(total);
+            
+            console.log(total);
+            alert("\tOrder Sumitted Successfully"+"\nNumber fo Burgers:"+quantity+"\nTotal price:"+total);
+        
+        }
+        
+    </script>
+</body>
+</html>
